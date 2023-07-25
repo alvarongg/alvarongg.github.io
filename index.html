@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Alvaro Garcia Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/55ec7a78e2.js" crossorigin="anonymous"></script>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<!-- Linkeo con CSS de Bootstrap 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	<!-- Linkeo mi propio CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Este estilo es para acomodar el texto 500x500 en la imagen -->
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+  
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+	</style>
+
+	<!-- CSS para la galeria de imagenes -->
+	<link href="css/lightbox.min.css" rel="stylesheet" />
+
+	<!-- Linkeo mi propio JS -->
+	<script src="js/copyText.js"></script>
+	<script src="js/index.js"></script>
+
+</head>
+<body>
+
+	<!-- Header de la pagina -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="#homepage">AG</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarsExample04">
+			
+			<ul class="navbar-nav mr-auto">
+
+				<li class="nav-item active" onclick="updateActiveNav(this)">
+					<a class="nav-link" href="#presentationpage">About</a>
+				</li>
+
+				<li class="nav-item" onclick="updateActiveNav(this)">
+					<a class="nav-link" href="#skillspage">Skills</a>
+				</li>
+
+				<li class="nav-item" onclick="updateActiveNav(this)">
+					<a class="nav-link" href="#experiencepage">Experience</a>
+				</li>
+				
+				<li class="nav-item" onclick="updateActiveNav(this)">
+					<a class="nav-link" href="#studypage">Education</a>
+				</li>
+				
+				<li class="nav-item" onclick="updateActiveNav(this)">
+					<a class="nav-link" href="#projectspage">Projects</a>
+				</li>
+
+				<li class="nav-item" onclick="updateActiveNav(this)">
+				  <a class="nav-link" href="#contactpage">Contact</a>
+				</li>
+
+			</ul>
+
+			<ul class="navbar-nav md-auto">
+
+				<li class="ms-3">
+					<a href="https://github.com/alvarongg" target="_blank" class="badge text-muted social">
+						<i class="fab fa-github fa-2x"></i>
+					</a>
+				</li>
+
+				<li class="ms-3">
+					<a href="https://www.linkedin.com/in/alvaro-nicolas-garcia-guillen-66531750" target="_blank" class="badge text-muted social">
+						<i class="fab fa-linkedin fa-2x"></i>
+					</a>
+				</li>
+
+				<li class="ms-3">
+					<a href="https://www.instagram.com/alvarongg" target="_blank" class="badge text-muted social">
+						<i class="fab fa-instagram fa-2x"></i>
+					</a>
+				</li>
+			
+				<li class="ms-3">
+					<a href="https://api.whatsapp.com/send?phone=5491161111611" target="_blank" class="badge text-muted social">
+						<i class="fab fa-whatsapp fa-2x"></i>
+					</a>
+				</li>
+
+			</ul>
+
+
+		</div>
+	</nav>
+
+	<section class="py-4 text-center container-fluid bg-dark" id="homepage">
+
+		<br>
+
+		<div class="row py-lg-5">
+			<div class="col-lg-6 col-md-8 mx-auto">
+
+				<svg class="bd-placeholder-img rounded-circle profileimg"
+					width="150" 
+					height="150" 
+					xmlns="http://www.w3.org/2000/svg" 
+					role="img" 
+					aria-label="Placeholder: 140x140" 
+					preserveAspectRatio="xMidYMid slice" 
+					focusable="false"
+					style="background-image: url(imgs/profile.jpg);">
+				</svg>
+
+				<br><br>
+
+				<h1 class="fw-light text-white">Alvaro Garcia</h1>
+
+				<br>
+
+				<p class="lead text-muted">
+					<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+						<path fill="currentColor" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+					</svg>
+					 <b>Bachelor's Degree in Computer Science</b> - <a href="https://www.ort.edu.ar" target="_blank">ORT</a>
+				</p>
+
+				<p class="lead text-muted">
+					<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+						<path fill="currentColor" d="M19.14,7.5A2.86,2.86 0 0,1 22,10.36V14.14A2.86,2.86 0 0,1 19.14,17H12C12,17.39 12.32,17.96 12.71,17.96H17V19.64A2.86,2.86 0 0,1 14.14,22.5H9.86A2.86,2.86 0 0,1 7,19.64V15.89C7,14.31 8.28,13.04 9.86,13.04H15.11C16.69,13.04 17.96,11.76 17.96,10.18V7.5H19.14M14.86,19.29C14.46,19.29 14.14,19.59 14.14,20.18C14.14,20.77 14.46,20.89 14.86,20.89A0.71,0.71 0 0,0 15.57,20.18C15.57,19.59 15.25,19.29 14.86,19.29M4.86,17.5C3.28,17.5 2,16.22 2,14.64V10.86C2,9.28 3.28,8 4.86,8H12C12,7.61 11.68,7.04 11.29,7.04H7V5.36C7,3.78 8.28,2.5 9.86,2.5H14.14C15.72,2.5 17,3.78 17,5.36V9.11C17,10.69 15.72,11.96 14.14,11.96H8.89C7.31,11.96 6.04,13.24 6.04,14.82V17.5H4.86M9.14,5.71C9.54,5.71 9.86,5.41 9.86,4.82C9.86,4.23 9.54,4.11 9.14,4.11C8.75,4.11 8.43,4.23 8.43,4.82C8.43,5.41 8.75,5.71 9.14,5.71Z" />
+					</svg>
+					<b>Software Engineer</b> & <b>Big Data Engineer</b>
+				</p>
+
+				<p class="lead text-muted">
+					<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+						<path fill="currentColor" d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" />
+					</svg>
+					Data Specialist  <b>IA | Big Data | InfoSec</b>
+				</p>
+
+				<p class="lead text-muted">
+					<i>Buenos Aires, Argentina</i>
+				</p>
+				<a 	
+					class="badge badge-primary mail pop"
+					onclick="copyToClipboard('#mymail1')"
+					data-toggle="popover"
+					data-placement="right"
+					data-content="Email copied!">
+					<span id="mymail1">alvarogarciainfo@gmail.com</span>
+				</a>
+				<p id="presentationpage"></p>
+			</div>
+		</div>
+	</section>
+
+	<br><br>
+
+	<main role="main">
+
+		<!-- Marketing messaging and featurettes
+		================================================== -->
+		<!-- Wrap the rest of the page in another container to center all the content. -->
+	  
+		<div class="container marketing">
+
+			<div class="row">
+				<div class="col-md-12">
+					<h1>About Me:</h1>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-10">
+					<p>
+						Hi! I'm Alvaro, a specialist in solving business problems focused on data. With over a decade of experience, I have worked with leading companies in Latin America, including Banco Itau, Banco Galicia, Coca Cola, Fesenius, Monsanto, Osde, Inacap, Ulagos, Movistar/Telefonica, and Infobae.
+					</p>
+					<p>
+						I have a diverse skill set that includes architecture design, pre-sales, customer training, proof of concept development, and project implementation. My work involves collaborating with clients to design robust data architectures, delivering successful pre-sales engagements, providing training sessions, and building proof of concepts to showcase the value of our solutions.
+					</p>
+				</div>
+			</div>
+		
+			<hr class="featurette-divider" id="skillspage">
+
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Skills</h1>
+				</div>
+			</div>
+
+			<br>
+			
+			<div class="row">
+				<div class="col-md habilidades-group">
+					<h3>Soft Skills:</h3>
+					<ul class="list-group ml-4">
+						<li>Problem Solving.</li>
+						<li>Team Builder.</li>
+						<li>Communication and Leadership</li>
+						<li>Creative Thinking</li>
+						<li>Self-taught</li>
+						<li>Interdisciplinary</li>
+					</ul>
+				</div>
+				<div class="col-md habilidades-group">
+					<h3>Tecnical Skills:</h3>
+					<ul class="list-group ml-4">
+						<li><b>Big Data AWS</b> ( Lambda | S3 | Glue | Dynamo | SQS | SNS | Athena | Quicksight | Kinesis )</li>
+						<li><b>Infrastructure as code </b> ( Serverless Framework | Amazon CDK | Amazon SAM | Cloudformation | Terraform )</li>
+						<li><b>Python</b> ( Anaconda | Pandas | SK-Learn | PySpark| Django | Flask | FastAPI |)</li>
+						<li><b>Steaming</b> ( MQTT | Kafka )</li>
+						<li><b> Version Control</b> ( Git | Github | Gitlab | CodeCommit) </li>
+						<li><b>Front-End</b> ( HTML | CSS | JS )</li>
+						<li><b>Linux</b> ( Ubuntu | Debian | CentOS | RedHat )</li>
+					</ul>
+				</div>
+				<div class="col-md habilidades-group">
+					<h3>Languages:</h3>
+					<ul class=" ml-4">
+						<li><b>Spanish:</b> Native</li>
+						<li><b>Englis:</b> Upper-Intermediate (B2)</li>
+					</ul>
+				</div>
+			</div>
+		
+			<hr class="featurette-divider" id="experiencepage">
+
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Work Experience</h1>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="accordion" id="accordionExample">
+
+						
+						<div class="card"> <!-- Cloudhesive --> 
+							<div class="card-header" id="heading0">
+								<h2 class="mb-0">
+									<span>
+										<button
+											class="btn btn-link btn-block text-left"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseCloudhesive"
+											aria-expanded="true"
+											aria-controls="collapseCloudhesive">
+											<i class="fas fa-users fa-lg"></i><b>Lead Data Engineer</b> @ Cloudhesive - OCT 2021 / PRESENT
+										</button>
+									</span>
+								</h2>
+							</div>
+					  
+							<div id="collapseCloudhesive" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
+								<div class="card-body">
+									<p>
+										Leading a team of engineers in the task of providing the best service to clients from different sectors, especially Banking, Education and Retail. Relieving, Designing and Developing solutions to data-oriented business problems. Working exclusively with AWS services.
+										Among my responsibilities are:
+									</p>
+									<ul class="ml-5">
+										<li><b>Lead a team of data engineers.</b></li>
+										<li><b>Speaker at conferences and events for clients.</b></li>
+										<li>Develop solutions of data with Cloud Tools. </li>
+										<li>Coaching and Capacitation clients in use of Cloud Data Tools.</li>
+										<li><b>Specialized in AWS Solutions. </b></li>
+										<li>Design and implementation of data governance plans.</li>
+										<li>Design and implementation of data integration projects.</li>
+										<li>Design and implementation of data migration projects.</li>
+										<li>Design and implementation of data quality projects.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card"> <!-- Personal consultant and business mentor -->
+							<div class="card-header" id="heading2">
+								<h2 class="mb-0">
+									<span>
+										<button
+											class="btn btn-link btn-block text-left collapsed"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapse2"
+											aria-expanded="true"
+											aria-controls="collapse2">
+											<i class="fas fa-chalkboard-teacher fa-lg"></i><b> Expert consultant and business mentor </b> @ Freelance - JUN 2017 / PRESENT
+										</button>
+									</span>
+								</h2>
+							</div>
+					  
+							<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+								<div class="card-body">
+									<p>
+										Consultancy specialized in creating data strategies for small and medium-sized companies in different sectors.
+									</p>
+									<p>
+										As well, she also mentors IT managers and leaders in setting up job searches and facilitating material or support for technical interviews.
+									</p>
+									<p>
+										Among my main activities are:
+									</p>
+									<p>
+										<ul class="ml-5">
+											<li>
+												Mentoring to C-level leaders and executives.
+											</li>
+											<li>
+												Support to HR in the preparation of job searches.
+											</li>
+											<li>
+												Support in technical interviews.
+											</li>
+											<li>
+												Mentoring to Developers in the assembly of data portfolios.
+											</li>
+											<li>
+												Design of data strategies, governance and storage.
+											</li>
+											<li>
+												Participation in community events as a speaker.
+											</li>
+											<li>
+												Support in the organization of community events.
+											</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card"> <!-- Galicia --> 
+							<div class="card-header" id="heading0">
+								<h2 class="mb-0">
+									<span>
+										<button
+											class="btn btn-link btn-block text-left"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseGalicia"
+											aria-expanded="true"
+											aria-controls="collapseGalicia">
+											<i class="fas fa-server"></i><b> Lead Data Processing Engineer</b> @ CDA / Banco Galicia - FEB 2021 / NOV 2021
+										</button>
+									</span>
+								</h2>
+							</div>
+					  
+							<div id="collapseGalicia" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
+								<div class="card-body">
+									<p>
+										Core banking process migration project to new technologies, leading a team of engineers and functional analysts. Among my responsibilities were:
+									</p>
+									<ul class="ml-5">
+										<li><b>Full Time In Banco Galicia</b></li>
+										<li>Management of the critical chain of debtors and banking history.</li>
+										<li>Management and planning of information integration projects.</li>
+										<li>Budget management and management of suppliers</li>
+										<li>Automation of information burdens</li>
+										<li>Consolidate and normalize data from various sources.</li>
+										<li>Provide certified information repository.</li>
+										<li>Managment and resolution of issues and problems.</li>
+										<li>Modification of rules and reports in ad hoc tools./li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="card"> <!-- Fresenius -->
+							<div class="card-header" id="heading0">
+								<h2 class="mb-0">
+									<span>
+										<button
+											class="btn btn-link btn-block text-left"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseFesenius"
+											aria-expanded="true"
+											aria-controls="collapseFesenius">
+											<i class="fas fa-database"></i><b> Lead BI Specialist</b> @ Fresenius Kabi - JUN 2017 / FEB 2021
+										</button>
+									</span>
+								</h2>
+							</div>
+					  
+							<div id="collapseFesenius" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
+								<div class="card-body">
+									<p>
+										Leading a multidisciplinary team of five people, we developed data-oriented solutions to support business operations. Among my responsibilities were:
+									</p>
+									<ul class="ml-5">
+										<li>Management and planning of information integration projects for commercial areas.</b></li>
+										<li>Budget management and supplier management.</li>
+										<li>Provide a certified information repository to all business units.</li>
+										<li>Design of visualizations oriented to UX with the support of a graphic designer.</li>
+										<li>Insigth generation and gradual incorporation of Machine Learning to the decision making process</li>
+										<li>Training to employees of the commercial area on the use of BI platforms and safe handling of information.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="card"> <!-- PRUNE -->
+							<div class="card-header" id="heading0">
+								<h2 class="mb-0">
+									<span>
+										<button
+											class="btn btn-link btn-block text-left"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapseprune"
+											aria-expanded="true"
+											aria-controls="collapseprune">
+											<i class="fas fa-users fa-lg"></i> <b>BI Manager</b> @ Prüne - SEP 2016 / JUN 2017
+										</button>
+									</span>
+								</h2>
+							</div>
+					  
+							<div id="collapseprune" class="collapse" aria-labelledby="heading0" data-parent="#accordionExample">
+								<div class="card-body">
+									<p>
+										Management and planning of new business intelligence projects to provide strategic information to all areas of the business.
+									</p>
+									<p>
+										Promote the use of Bi tools as the only repository of certified company information.
+									</p>
+							
+									
+										
+									
+								</div>
+							</div>
+						</div>
+
+						<div class="card"> <!-- COCA -->
+							<div class="card-header" id="heading1">
+								<h2 class="mb-0">
+									<span>
+										<button
+											class="btn btn-link btn-block text-left"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapse1"
+											aria-expanded="true"
+											aria-controls="collapse1">
+											<i class="fas fa-code fa-lg"></i><b> BI Consultant SR </b> @ Coca Cola Company - FEB 2014 / SEP 2016
+										</button>
+									</span>
+								</h2>
+							</div>
+					  
+							<div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionExample">
+								<div class="card-body">
+									<p>
+										Managed and administered a data processing support team distributed between Argentina, Brazil and Costa Rica. Among my responsibilities were:
+									</p>
+									<p>
+										<ul class="ml-5">
+											<li>
+												Support sales loading processes from bottling plants.
+											</li>
+											<li>
+												Technology update in old processes to new technologies.
+											</li>
+											<li>
+												Guard management.
+											</li>
+											<li>
+												Resolution of support tickets.
+											</li>
+											<li>
+												Direct report to Coca Cola Mexico and Atlanta.
+											</li>
+										</ul>
+									</p>
+			
+								</div>
+							</div>
+						</div>
+
+						<div class="card"> <!-- Seidor -->
+							<div class="card-header" id="heading3">
+								<h2 class="mb-0">
+									<span>
+										<button
+											class="btn btn-link btn-block text-left collapsed"
+											type="button"
+											data-toggle="collapse"
+											data-target="#collapse3"
+											aria-expanded="true"
+											aria-controls="collapse3">
+											<i class="fas fa-code fa-lg"></i><b> BI Consultant SSR</b> @ Seidor Analytics - JUL 2012 / FEB 2014
+										</button>
+									</span>
+								</h2>
+							</div>
+					  
+							<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+								<div class="card-body">
+									<p>
+										Development of BI applications in general, development and implementation of data warehouse in various database engines, using SAP technology exclusively.
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		
+			<hr class="featurette-divider" id="studypage">
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Education and certifications</h1>
+				</div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+					<div class="card border-primary">
+						<h5 class="card-header bg-primary text-white"><b>Bachelor's Degree in Computer Science</b> - ORT </h5>
+						<div class="card-body">
+							<h6 class="card-title">Degree received in 2016 - Average score 8.89</h6>
+							<!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+							<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+							<footer class="blockquote-footer"><a href="https://www.ort.edu.ar" target="_blank">ORT</a> | Buenos Aires, Argentina</footer>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+					<div class="card border-primary">
+						<h5 class="card-header"><b>AWS Certifications:</b></h5>
+						<div class="card-body">
+							<h6 class="card-title"><b>AWS Cloud Practitioner</b></h6>
+							<h6 class="card-title">Certification received in Nov 2021 , <b>Creedly</b>  <a href="https://www.credly.com/badges/356d892c-bf52-4295-8211-7c3c87a0d45a" target="_blank">Link</a> </h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+					<div class="card border-primary">
+						<h5 class="card-header"><b>SAP Certifications:</b></h5>
+						<div class="card-body">
+							<h6 class="card-title"><b>SAP BusinessObjects 4.0 Business Intelligence (BI) and Enterprise Information Management (EIM)</b></h6>
+							<h6 class="card-title">Certification received in May 2013 , <b>Credential ID:</b> S0009786200ID</h6>
+							<h6 class="card-title"><b>SAP BusinessObjects EPM and GRC Product Knowledge</b> </h6>
+							<h6 class="card-title">Certification received in May 2013 , <b>Credential ID:</b> S0009786200</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-10">
+					<div class="card">
+						<h5 class="card-header"><b>Data Science Bootcamp</b></h5>
+						<div class="card-body">
+							<h6 class="card-title">Intensive 11-day course where we work on all the main concepts of Machine Learning from data preparation, model training, adjustments, testing and later generation of inferences.</h6>
+							<!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+							<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+							<footer class="blockquote-footer"><a href="https://www.plataforma5.la/" target="_blank">Plataforma 5 </a>| Buenos Aires, Argentina</footer>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+		
+			<hr class="featurette-divider" id="projectspage">
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Projects & events</h1>
+				</div>
+			</div>
+			<br><br><br>
+			<!-- Three columns of text below the carousel -->
+			<div class="row">
+				<div class="col-lg-4">
+					<a href="https://aws-chile.securityday.community/#speakers" target="_blank">
+						<svg class="bd-placeholder-img rounded-circle gallery-img"
+							width="140"
+							height="140"
+							xmlns="http://www.w3.org/2000/svg"
+							role="img"
+							aria-label="Placeholder: 140x140"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+							style="background-image: url(imgs/projects/aws_cd_se_j2023.jpeg);">
+						</svg>
+					</a>
+					<br><br>
+					<h2>Speaker at AWS Community Day Chile: Security Edition 2023</h2>
+					<p>I was invited as a speaker to participate in the first aws community day: security edition in Santiago de Chile.</p>
+					<p><a class="btn btn-primary" href="https://www.instagram.com/reel/CuQmnf3NOG6/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">Instagram Reel »</a></p>
+				</div><!-- /.col-lg-4 -->
+				<div class="col-lg-4">
+					<a href="https://www.linkedin.com/events/losanillosdeseguridad-salvaguar7082429703814287360/theater/" target="_blank">
+						<svg class="bd-placeholder-img rounded-circle gallery-img"
+							width="140"
+							height="140"
+							xmlns="http://www.w3.org/2000/svg"
+							role="img"
+							aria-label="Placeholder: 140x140"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+							style="background-image: url(imgs/projects/aws_ug_chile_meetup_lotr.jpeg);">
+						</svg>
+					</a>
+					<br><br>
+					<h2>Speaker at the Monthly Meetup of AWS User Group Chile</h2>
+					<p>After the positive repercussion of my talk at AWS Community Day: Security Edition Chile 2023, I was invited by the organizing team of AWS User Group Chile to reproduce my talk at their monthly meetup for all those who were left without hearing me in person.</p>
+					<p><a class="btn btn-primary" href="https://www.linkedin.com/events/losanillosdeseguridad-salvaguar7082429703814287360/theater/" target="_blank">Link of the Video »</a></p>
+				</div>
+				<div class="col-lg-4">
+					<a href="https://www.linkedin.com/posts/lautarohelf_aws-chile-data-activity-6964955761290424321-78wt?utm_source=share&utm_medium=member_desktop" target="_blank">
+						<svg class="bd-placeholder-img rounded-circle gallery-img"
+							width="140"
+							height="140"
+							xmlns="http://www.w3.org/2000/svg"
+							role="img"
+							aria-label="Placeholder: 140x140"
+							preserveAspectRatio="xMidYMid slice"
+							focusable="false"
+							style="background-image: url(imgs/projects/talk_commercial_monetization.jpeg);">
+						</svg>
+					</a>
+					<br><br>
+					<h2>Commercial presentation "How to obtain operational and economic benefits from your data"</h2>
+					<p>Supporting the Cloudhesive commercial team, we carried out a technical and functional talk on the benefits of data monetization in cloud environments, especially using AWS serverless services.</p>
+					<p><a class="btn btn-primary" href="https://www.linkedin.com/posts/lautarohelf_aws-chile-data-activity-6964955761290424321-78wt?utm_source=share&utm_medium=member_desktop" target="_blank">Link of the post »</a></p>
+				</div>
+				
+	  
+		</div>
+	  
+	</main>
+
+	<br><br><br>
+
+	<footer class="container-fluid text-center bg-dark text-white" id="contactpage">
+		
+		<!-- <hr class="featurette-divider"> -->
+		<br><br>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>Keep in touch</h1>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Email: -->
+				<a 	
+					class="badge badge-primary mail pop"
+					onclick="copyToClipboard('#mymail2')"
+					data-toggle="popover"
+					data-placement="right"
+					data-content="Email copied!">
+					<i class="fas fa-at"></i>  <span id="mymail2" style="font-size: 110%;">alvarogarciainfo@gmail.com</span>
+				</a>
+			</div>
+			<br><br>
+			<div class="col-lg-12">
+				<!-- Email: -->
+				<a 	
+					class="badge badge-primary mail pop"
+					onclick="copyToClipboard('#myphone')"
+					data-toggle="popover"
+					data-placement="right"
+					data-content="Phone copied!">
+					<i class="fas fa-phone-alt"></i>  <span id="myphone" style="font-size: 110%;">5491161111611</span>
+				</a>
+			</div>
+		</div>
+		<ul class="nav-column justify-content-center text-dark">
+			
+		</ul>
+
+		<br>
+
+		<h5 class="text-muted">Social Media</h5>
+		<br>
+
+		<ul class="nav text-dark socialfooter">
+			<li class="ms-3 ml-3 mr-3">
+				<a href="https://api.whatsapp.com/send?phone=5491161111611" target="_blank" class="badge text-muted social">
+					<i class="fab fa-whatsapp fa-2x"></i>
+					<h5>WhatsApp</h5>
+				</a>
+			</li>
+			<li class="ms-3 ml-3 mr-3">
+				<a href="https://github.com/alvarongg" target="_blank" class="badge text-muted social">
+					<i class="fab fa-github fa-2x"></i>
+					<h5>GitHub</h5>
+				</a>
+			</li>
+			<li class="ms-3 ml-3 mr-3">
+				<a href="https://www.linkedin.com/in/alvaro-nicolas-garcia-guillen-66531750" target="_blank" class="badge text-muted social">
+					<i class="fab fa-linkedin fa-2x"></i>
+					<h5>LinkedIn</h5>
+				</a>
+			</li>
+			<li class="ms-3 ml-3 mr-3">
+				<a href="https://www.instagram.com/alvarongg" target="_blank" class="badge text-muted social">
+					<i class="fab fa-instagram fa-2x"></i>
+					<h5>Instagram</h5>
+				</a>
+			</li>
+		</ul>
+	
+
+		<br><br>
+		
+	</footer>
+
+
+	<!-- Linkeo con JS de Bootstrap 4 -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+	
+	<!-- Script para mostrar los popovers en toda la pagina -->
+	<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover();
+		})
+		$('.pop').popover().click(function () {
+			setTimeout(function () {
+				$('.pop').popover('hide');
+			}, 2000);
+		});
+	</script>
+
+	<!-- Script para la galeria de imagenes -->
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<script src="js/scroll.js"></script>
+
+</body>
+</html>
