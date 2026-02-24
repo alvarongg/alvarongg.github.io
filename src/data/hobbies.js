@@ -27,9 +27,9 @@ export default [
     description: 'Guitar and music production.',
   },
   {
-    name: 'Travel',
-    icon: 'fas fa-plane',
-    description: 'Exploring new cultures and destinations.',
+    name: 'Formula 1',
+    icon: 'fas fa-flag-checkered',
+    description: 'Analyzing race data, following the grid, and proudly cheering for Franco Colapinto.',
   },
   {
     name: 'Homelab & IoT',
