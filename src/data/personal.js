@@ -1,0 +1,26 @@
+export default {
+  fullName: 'Alvaro Garcia',
+  title: 'Data, Dev & GenAI Engineering Manager',
+  subtitle: 'AWS Architect | Speaker | Pre Sales | Gen AI Specialist | Big Data | InfoSec',
+  degree: "Bachelor's Degree in Computer Science",
+  degreeInstitution: 'ORT',
+  degreeLink: 'https://www.ort.edu.ar',
+  location: 'Buenos Aires, Argentina',
+  email: 'alvarogarciainfo@gmail.com',
+  phone: '+541161111611',
+  profileImage: '/imgs/profile.JPG',
+  cvLink: '/Alvaro_Nicolas_Garcia_Guillen_CV_2025_EN.pdf',
+  socialLinks: [
+    { name: 'GitHub', url: 'https://github.com/alvarongg', icon: 'fab fa-github' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/alvaro-nicolas-garcia-guillen-66531750', icon: 'fab fa-linkedin' },
+    { name: 'Instagram', url: 'https://www.instagram.com/alvarongg', icon: 'fab fa-instagram' },
+    { name: 'WhatsApp', url: 'https://api.whatsapp.com/send?phone=541161111611', icon: 'fab fa-whatsapp' },
+    { name: 'SlideShare', url: 'https://es.slideshare.net/AlvaroGarcia86045', icon: 'fas fa-share-from-square' },
+  ],
+  aboutMe: [
+    "I turn data into decisions. With over 13 years of experience across Banking, Healthcare, Retail, Education, and Media, I've helped companies like Banco Itaú, Banco Galicia, Coca-Cola, Fresenius, Movistar/Telefónica, and Infobae unlock the real value of their data through cloud-native architectures on AWS.",
+    "Today I lead 24 engineers across 5 specialized teams — software development, data engineering, machine learning, and generative AI — at Cloudhesive. My focus goes beyond technical delivery: I build committed, high-performing teams where people grow, take ownership, and deliver with purpose. I believe the best solutions come from teams that trust each other and share a clear direction.",
+    "My career spans the full spectrum of data leadership: from hands-on engineering and architecture design to pre-sales strategy, client coaching, and public speaking at AWS community events across Latin America. I don't just design systems — I align technology with business goals and make sure every stakeholder speaks the same language.",
+    "Whether I'm mentoring C-level executives on data strategy, training teams on cloud tools, or building proof of concepts that close deals, I bring the same approach: clarity, ownership, and a genuine drive to solve problems that matter.",
+  ],
+}

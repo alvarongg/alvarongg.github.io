@@ -1,0 +1,73 @@
+export default {
+  degrees: [
+    {
+      title: "Bachelor's Degree in Computer Science",
+      institution: 'ORT',
+      institutionUrl: 'https://www.ort.edu.ar',
+      year: 2016,
+      average: '8.89',
+      location: 'Buenos Aires, Argentina',
+    },
+    {
+      title: 'Data Science Bootcamp',
+      institution: 'Plataforma 5',
+      institutionUrl: 'https://www.plataforma5.la/',
+      year: 2019,
+      average: null,
+      location: 'Buenos Aires, Argentina',
+    },
+  ],
+  certifications: [
+    {
+      title: 'AWS Certified Data Analytics – Specialty',
+      issuer: 'AWS',
+      date: 'Jun 2022',
+      credlyUrl: 'https://www.credly.com/badges/5c724536-5a9f-4317-9ea3-304a38505a6e',
+      credentialId: null,
+      featured: true,
+    },
+    {
+      title: 'AWS Cloud Practitioner',
+      issuer: 'AWS',
+      date: 'Nov 2021',
+      credlyUrl: 'https://www.credly.com/badges/356d892c-bf52-4295-8211-7c3c87a0d45a',
+      credentialId: null,
+    },
+    {
+      title: 'AWS Partner: Generative AI Essentials',
+      issuer: 'AWS',
+      date: 'Mar 2024',
+      credlyUrl: 'https://www.credly.com/badges/61af8197-58b4-47ab-8840-9f740248b58c',
+      credentialId: null,
+    },
+    {
+      title: 'SAP BusinessObjects 4.0 Business Intelligence (BI) and Enterprise Information Management (EIM)',
+      issuer: 'SAP',
+      date: 'May 2013',
+      credlyUrl: null,
+      credentialId: 'S0009786200ID',
+    },
+    {
+      title: 'SAP BusinessObjects EPM and GRC Product Knowledge',
+      issuer: 'SAP',
+      date: 'May 2013',
+      credlyUrl: null,
+      credentialId: 'S0009786200',
+    },
+    {
+      title: 'Implementador ERP',
+      issuer: 'Cámara de la Industria Argentina del Software - CESSI',
+      date: '',
+      credlyUrl: null,
+      credentialId: null,
+    },
+    {
+      title: 'Qlik Sense Data Architect',
+      issuer: 'Qlik',
+      date: '',
+      credlyUrl: null,
+      credentialId: null,
+    },
+  ],
+  courses: [],
+}
